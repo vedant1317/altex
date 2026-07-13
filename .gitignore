@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.egg-info/
+build/
+dist/
+
+# never commit API keys
+keys.txt
+*.keys
+.env
+
+# generated output
+resume.tex
+resume.pdf
+*.aux
+*.log
+*.out

@@ -1,0 +1,18 @@
+Vedant Walunj
+Mumbai, India | +91 98765 43210 | vedant.walunj@somaiya.edu
+github.com/vedantwalunj | linkedin.com/in/vedantwalunj
+
+I'm a computer engineering student at KJ Somaiya College of Engineering (2022-2026),
+CGPA 8.9. Last summer (june-aug 2025) I interned at Acme Analytics as a software
+engineering intern, working remotely. There I built a data ingestion pipeline in
+python and sql that processed over 2 million rows a day and made reports 40% faster.
+I also wrote around 50 unit tests which took coverage from 45% to 85% on the ETL
+module, and dockerized 3 services which cut new-dev setup from 2 days to about an hour.
+
+Projects: I built a latex resume builder (python, groq api, jinja2) in 2026 - a CLI
+that turns any pdf or text resume into a single page ATS-ready latex file for
+overleaf, with api key rotation to survive free tier rate limits.
+
+Skills: python, c++, sql, javascript, fastapi, docker, git, postgresql, latex.
+I have the AWS cloud practitioner cert (2025) and won the Somaiya Hackathon in 2024
+against 100+ teams.

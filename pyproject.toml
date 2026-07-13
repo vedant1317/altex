@@ -1,0 +1,23 @@
+[project]
+name = "resume-builder"
+version = "0.1.0"
+description = "Turn a PDF or text resume into a single-page, ATS-ready LaTeX resume for Overleaf"
+requires-python = ">=3.9"
+dependencies = [
+    "pdfplumber>=0.11",
+    "jinja2>=3.1",
+    "requests>=2.31",
+]
+
+[project.scripts]
+resume-build = "resume_builder.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["resume_builder"]
+
+[tool.setuptools.package-data]
+resume_builder = ["templates/*.j2"]

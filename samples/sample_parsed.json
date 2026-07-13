@@ -1,0 +1,49 @@
+{
+  "name": "Vedant Walunj",
+  "email": "vedant.walunj@somaiya.edu",
+  "phone": "+91 98765 43210",
+  "location": "Mumbai, India",
+  "links": [
+    {"label": "GitHub", "url": "https://github.com/vedantwalunj"},
+    {"label": "LinkedIn", "url": "https://linkedin.com/in/vedantwalunj"}
+  ],
+  "summary": "",
+  "education": [
+    {
+      "institution": "K. J. Somaiya College of Engineering",
+      "location": "Mumbai, India",
+      "degree": "B.Tech in Computer Engineering; CGPA: 8.9/10",
+      "dates": "Aug 2022 -- May 2026"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineering Intern",
+      "company": "Acme Analytics",
+      "location": "Remote",
+      "dates": "Jun 2025 -- Aug 2025",
+      "bullets": [
+        "Built a data-ingestion pipeline in Python & SQL processing 2M+ rows/day, cutting report latency by 40%",
+        "Wrote 50+ unit tests raising coverage from 45% to 85% across the ETL module",
+        "Containerized 3 services with Docker, reducing onboarding setup time from 2 days to 1 hour"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "LaTeX Resume Builder",
+      "tech": "Python, Groq API, Jinja2",
+      "dates": "2026",
+      "bullets": [
+        "CLI that converts any PDF/text resume into a single-page, ATS-ready LaTeX file for Overleaf",
+        "Implemented API-key rotation to survive free-tier rate limits with zero downtime"
+      ]
+    }
+  ],
+  "skills": [
+    {"category": "Languages", "items": ["Python", "C++", "SQL", "JavaScript"]},
+    {"category": "Frameworks & Tools", "items": ["FastAPI", "Docker", "Git", "PostgreSQL", "LaTeX"]}
+  ],
+  "certifications": ["AWS Certified Cloud Practitioner (2025)"],
+  "achievements": ["Winner, Somaiya Hackathon 2024 (100+ teams)"]
+}
