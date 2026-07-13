@@ -68,6 +68,10 @@ and SQL"), and when the input gives a before/after comparison (e.g. "from 2 days
 in some bullet.
 - Use canonical capitalization for technology names: LaTeX, PostgreSQL, JavaScript, FastAPI, \
 GitHub, etc.
+- PDF extraction often deletes spaces ("KJSomaiyaCollegeofEngineering") and separators \
+("NERVE—AutonomousOutreachEngine"). Reconstruct proper spacing, apostrophes, and keep \
+separator dashes: that project name is "NERVE — Autonomous Outreach Engine".
+- Format certifications as "Name — Issuer (Year)" when the issuer/year is known.
 - Keep the resume single-page worthy: at most 4 bullets per experience entry, 3 per project, \
 and drop trivial or redundant items if the input is very long.
 - Dates: use the format "Mon YYYY -- Mon YYYY" or "Mon YYYY -- Present" when known.

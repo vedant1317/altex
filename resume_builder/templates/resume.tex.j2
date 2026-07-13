@@ -17,8 +17,8 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.6in}
 \addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-0.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
 \urlstyle{same}
 \raggedbottom
 \raggedright
@@ -27,7 +27,8 @@
 \pagestyle{empty}
 
 % Section formatting
-\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\titlerule\vspace{-5pt}]
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
 
 % Ensure ATS parsers can read the generated PDF text (pdfLaTeX only; XeTeX/LuaTeX are unicode-native)
 \ifdefined\pdfgentounicode
@@ -36,7 +37,7 @@
 \fi
 
 % Custom commands
-\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
+\newcommand{\resumeItem}[1]{\item\small{#1}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -50,16 +51,16 @@
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, topsep=2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, itemsep=0pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 \begin{document}
 
 %----------HEADER----------
 \begin{center}
-    {\Huge \scshape ((( name|tex )))} \\ \vspace{4pt}
+    {\Huge \scshape ((( name|tex )))} \\ \vspace{1pt}
     \small
 ((* set contact_parts = [] *))
 ((* if phone *))((* set _ = contact_parts.append(phone|tex) *))((* endif *))
@@ -143,7 +144,7 @@
 ((* if certifications *))
 %----------CERTIFICATIONS----------
 \section{Certifications}
- \begin{itemize}[leftmargin=0.25in]
+ \begin{itemize}[leftmargin=0.25in, itemsep=0pt, topsep=2pt]
 ((* for cert in certifications *))
     \resumeItem{((( cert|tex )))}
 ((* endfor *))
@@ -154,7 +155,7 @@
 ((* if achievements *))
 %----------ACHIEVEMENTS----------
 \section{Achievements}
- \begin{itemize}[leftmargin=0.25in]
+ \begin{itemize}[leftmargin=0.25in, itemsep=0pt, topsep=2pt]
 ((* for item in achievements *))
     \resumeItem{((( item|tex )))}
 ((* endfor *))

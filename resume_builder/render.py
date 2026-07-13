@@ -29,11 +29,27 @@ _LATEX_SPECIALS = {
 }
 _LATEX_RE = re.compile("|".join(re.escape(c) for c in _LATEX_SPECIALS))
 
+# Unicode punctuation -> LaTeX commands, so output renders identically on
+# pdfLaTeX (Overleaf) and XeTeX/LuaTeX (tectonic) regardless of font setup.
+_UNICODE_MAP = {
+    "—": r"\textemdash{}",   # —
+    "–": r"\textendash{}",   # –
+    "‘": "`",                # '
+    "’": "'",                # '
+    "“": "``",               # "
+    "”": "''",               # "
+    "•": r"\textbullet{}",   # •
+    " ": "~",                # non-breaking space
+}
+
 
 def tex_escape(value: Any) -> str:
     if value is None:
         return ""
-    return _LATEX_RE.sub(lambda m: _LATEX_SPECIALS[m.group()], str(value))
+    text = _LATEX_RE.sub(lambda m: _LATEX_SPECIALS[m.group()], str(value))
+    for char, cmd in _UNICODE_MAP.items():
+        text = text.replace(char, cmd)
+    return text
 
 
 def strip_scheme(url: str) -> str:

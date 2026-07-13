@@ -9,9 +9,10 @@ keys.txt
 *.keys
 .env
 
-# generated output
+# generated output (and personal resumes)
 resume.tex
 resume.pdf
+my_resume.*
 *.aux
 *.log
 *.out
